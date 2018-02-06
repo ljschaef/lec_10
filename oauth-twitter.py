@@ -10,7 +10,7 @@ client_secret = secrets.client_secret
 # ...otherwise no token -- you can't even get in the door!
 #
 # At this point we have provided our application's credentials
-# so that we have the privelege to do more stuff, like request
+# so that we have the privilege to do more stuff, like request
 # authorization for a particular user.
 request_token_url = 'https://api.twitter.com/oauth/request_token'
 
@@ -26,7 +26,7 @@ resource_owner_secret = fetch_response.get('oauth_token_secret')
 # to log in. After they do, Twitter will generate a special URL,
 # unique to this operation (THIS request for THIS user by THIS application).
 # Our application can then go to that URL to get the very special
-# verification token that we can use to retreive THIS user's data for use
+# verification token that we can use to retrieve THIS user's data for use
 # in THIS application
 base_authorization_url = 'https://api.twitter.com/oauth/authorize'
 
@@ -47,7 +47,7 @@ verifier = input('Paste the verification code here: ')
 # Wait, what? We still don't have access to the user's data? Nope.
 # What we have now is an "opaque" token that will give us access to their data
 # (remember, that we could only get this token after the user logged in and
-# retreived it).
+# retrieved it).
 #
 # Aside: when we created our API key, we asked for specific permissions.
 #        For Twitter they're not that interesting--either Read or Read/Write.
